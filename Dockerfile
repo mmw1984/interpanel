@@ -6,7 +6,7 @@ WORKDIR /code
 ADD . /code
 
 # 如何将项目跑起来
-ADD package.json package-lock.json /code
+ADD package.json /code
 
 RUN yarn install
 RUN yarn run build
